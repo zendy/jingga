@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    FORM
+\*------------------------------------*/
+/**
+ * form
+ */
+
+
+form {
+  .field-row {
+    margin-bottom: 5px;
+  }
+
+  .field-row__label {
+    display: block;
+  }
+
+  .field-row__input {
+    display: inline-block;
+    border: none;
+  }
+}

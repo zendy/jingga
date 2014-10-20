@@ -2,5 +2,57 @@
     MAIN CONTENT AREA
 \*------------------------------------*/
 /**
- *
+ * .MainContent
+ * .MainContent_Banner
+ * .MainContent_Section
+ * .MainContent_Section_Gallery_Block
  */
+
+
+.MainContent {
+  margin-top: 64px;
+}
+
+.MainContent_Banner {
+  height: 640px;
+  padding: 32px 0;
+
+  h3 {
+    text-align: right;
+  }
+}
+
+.MainContent_Section {
+  height: 320px;
+  padding: 64px 0;
+}
+
+.MainContent_Section-How {
+  background-color: #69d2e7;
+}
+
+.MainContent_Section-Why {
+  background-color: #a7dbd8;
+}
+
+.MainContent_Section-What {
+  background-color: #e0e4cc;
+}
+
+.MainContent_Section_Gallery_Block {
+  @include susy-breakpoint( $bp-small, $layout-small ) {
+    @include span( 100% );
+  }
+
+  // @include susy-breakpoint( $bp-medium, $layout-medium ) {
+
+  // }
+
+  @include susy-breakpoint( $bp-large, $layout-large ) {
+    @include gallery(4 of 12);
+  }
+
+  // @include susy-breakpoint( $bp-xl, $layout-xl, $no-query: true ) {
+
+  // }
+}

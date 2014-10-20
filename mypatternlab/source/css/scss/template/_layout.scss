@@ -2,19 +2,19 @@
     LAYOUT
 \*------------------------------------*/
 /**
- * .container
+ * .Container
  */
 
-.container {
+.Container {
   @extend %clearfix;
 
   @include susy-breakpoint( $bp-small, $layout-small ) {
-    padding: 0 1em;
+    padding: 0 0.5em;
     @include container( $bp-small );
   }
 
   @include susy-breakpoint( $bp-medium, $layout-medium ) {
-    padding: 0 1em;
+    padding: 0 0.5em;
     @include container( $bp-medium );
   }
 

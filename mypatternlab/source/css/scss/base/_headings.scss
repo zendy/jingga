@@ -2,35 +2,41 @@
     HEADINGS
 \*------------------------------------*/
 /**
- * h1, .aplha
- * h2, .beta
- * h3, .gamma
- * h4, .delta
- * h5, .teta
- * h6, .zeta
+ * h1, .Alpha
+ * h2, .Beta
+ * h3, .Gamma
+ * h4, .Delta
+ * h5, .Teta
+ * h6, .Zeta
  */
 
 
-h1, .alpha {
-  @include font-size-in-em( px );
+h1, .Alpha {
+  @include font-size-in-em( 72px );
+  line-height: 1.55;
 }
 
-h2, .beta {
-  @include font-size-in-em( px );
+h2, .Beta {
+  @include font-size-in-em( 44.499px );
+  line-height: 1.8;
 }
 
-h3, .gamma {
-  @include font-size-in-em( px );
+h3, .Gamma {
+  @include font-size-in-em( 41.887px );
 }
 
-h4, .delta {
-  @include font-size-in-em( px );
+h4, .Delta {
+  @include font-size-in-em( 27.502px );
 }
 
-h5, .teta {
-  @include font-size-in-em( px );
+h5, .Teta {
+  @include font-size-in-em( 25.888px );
 }
 
-h6, .zeta {
-  @include font-size-in-em( px );
+h6, .Zeta {
+  @include font-size-in-em( 16.998px );
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
 }

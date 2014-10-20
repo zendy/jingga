@@ -58,10 +58,12 @@
 
   h2 {
     color: #69645b;
+    text-shadow: 2px 2px 2px #ccc;
   }
 
   h3 {
     color: #827e76;
+    text-shadow: 3px 3px 3px #ccc;
 
     @include susy-breakpoint( $bp-small, $layout-small ) {
       text-align: left;
@@ -74,6 +76,10 @@
 
   p, li {
     @include font-size-in-em( 19px );
+  }
+
+  .Btn-Submit {
+    box-shadow: 5px 5px 5px #ccc;
   }
 }
 

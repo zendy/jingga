@@ -8,5 +8,15 @@
 
 .MainFooter {
   height: 100px;
+  padding: 10px 0;
   background-color: #f8981c;
+
+  // small, svg {
+  //   display: inline-block;
+  //   vertical-align: bottom;
+  // }
+
+  svg {
+    float: right;
+  }
 }

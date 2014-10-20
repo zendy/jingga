@@ -16,11 +16,21 @@
   //   vertical-align: bottom;
   // }
 
+  .Container {
+    height: 80px;
+    position: relative;
+  }
+
+  small, svg {
+    position: absolute;
+  }
+
   small {
-    float: left;
+    bottom: 0;
+    left: 10px;
   }
 
   svg {
-    float: right;
+    right: 10px;
   }
 }

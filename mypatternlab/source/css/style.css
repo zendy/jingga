@@ -1069,41 +1069,60 @@ form .field-row__input {
  * .MainContent_Section
  * .MainContent_Section_Gallery_Block
  */
-/* line 12, scss/module/_main.scss */
-.MainContent {
-  margin-top: 64px;
-}
-
-/* line 16, scss/module/_main.scss */
+/* line 22, scss/module/_main.scss */
 .MainContent_Banner {
-  padding: 32px 0;
+  position: relative;
+  background-image: url("../images/banner_2.jpg");
+  background-size: cover;
   height: 640px;
+  padding: 32px 0;
+  background-position: center top;
 }
 @media (min-width: 20em) {
-  /* line 16, scss/module/_main.scss */
+  /* line 22, scss/module/_main.scss */
   .MainContent_Banner {
     height: auto;
     min-height: 640px;
+    padding: 0;
+    background-position: 80% center;
   }
 }
 @media (min-width: 50em) {
-  /* line 16, scss/module/_main.scss */
+  /* line 22, scss/module/_main.scss */
   .MainContent_Banner {
     height: 640px;
+    padding: 32px 0;
+    background-position: center top;
   }
 }
-/* line 28, scss/module/_main.scss */
+/* line 40, scss/module/_main.scss */
+.MainContent_Banner::before {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  content: '';
+}
+/* line 51, scss/module/_main.scss */
+.MainContent_Banner .Container {
+  position: relative;
+  z-index: 1;
+}
+/* line 56, scss/module/_main.scss */
 .MainContent_Banner h3 {
   text-align: right;
 }
 
-/* line 33, scss/module/_main.scss */
+/* line 61, scss/module/_main.scss */
 .MainContent_Section {
   height: 320px;
   padding: 64px 0;
 }
 @media (min-width: 20em) {
-  /* line 33, scss/module/_main.scss */
+  /* line 61, scss/module/_main.scss */
   .MainContent_Section {
     height: auto;
     min-height: 320px;
@@ -1111,30 +1130,30 @@ form .field-row__input {
   }
 }
 @media (min-width: 50em) {
-  /* line 33, scss/module/_main.scss */
+  /* line 61, scss/module/_main.scss */
   .MainContent_Section {
     height: 320px;
     padding: 64px 0;
   }
 }
 
-/* line 46, scss/module/_main.scss */
+/* line 74, scss/module/_main.scss */
 .MainContent_Section-How {
   background-color: #69d2e7;
 }
 
-/* line 50, scss/module/_main.scss */
+/* line 78, scss/module/_main.scss */
 .MainContent_Section-Why {
   background-color: #a7dbd8;
 }
 
-/* line 54, scss/module/_main.scss */
+/* line 82, scss/module/_main.scss */
 .MainContent_Section-What {
   background-color: #e0e4cc;
 }
 
 @media (min-width: 20em) {
-  /* line 58, scss/module/_main.scss */
+  /* line 86, scss/module/_main.scss */
   .MainContent_Section_Gallery_Block {
     width: 100%;
     float: left;
@@ -1142,7 +1161,7 @@ form .field-row__input {
   }
 }
 @media (min-width: 50em) {
-  /* line 58, scss/module/_main.scss */
+  /* line 86, scss/module/_main.scss */
   .MainContent_Section_Gallery_Block {
     width: 32.20339%;
     float: left;

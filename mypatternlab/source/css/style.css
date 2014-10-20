@@ -1385,7 +1385,7 @@ form .FieldRow_Input {
 }
 /* line 24, scss/module/_footer.scss */
 .MainFooter small, .MainFooter svg {
-  display: inline-block;
+  display: block;
   position: absolute;
 }
 /* line 29, scss/module/_footer.scss */

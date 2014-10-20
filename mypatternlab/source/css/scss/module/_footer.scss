@@ -7,32 +7,8 @@
 
 
 .MainFooter {
-  height: 100px;
+  height: 130px;
   padding: 10px 0;
   background-color: #f8981c;
-
-  // small, svg {
-  //   display: inline-block;
-  //   vertical-align: bottom;
-  // }
-
-  .Container {
-    height: 80px;
-    position: relative;
-  }
-
-  small, svg {
-    display: block;
-    position: absolute;
-  }
-
-  small {
-    bottom: 0;
-    left: 10px;
-  }
-
-  svg {
-    float: right;
-    right: 10px;
-  }
+  text-align: center;
 }

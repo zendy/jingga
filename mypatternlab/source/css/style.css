@@ -1374,27 +1374,8 @@ form .FieldRow_Input {
  */
 /* line 9, scss/module/_footer.scss */
 .MainFooter {
-  height: 100px;
+  height: 130px;
   padding: 10px 0;
   background-color: #f8981c;
-}
-/* line 19, scss/module/_footer.scss */
-.MainFooter .Container {
-  height: 80px;
-  position: relative;
-}
-/* line 24, scss/module/_footer.scss */
-.MainFooter small, .MainFooter svg {
-  display: block;
-  position: absolute;
-}
-/* line 29, scss/module/_footer.scss */
-.MainFooter small {
-  bottom: 0;
-  left: 10px;
-}
-/* line 34, scss/module/_footer.scss */
-.MainFooter svg {
-  float: right;
-  right: 10px;
+  text-align: center;
 }

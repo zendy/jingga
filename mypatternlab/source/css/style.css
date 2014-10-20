@@ -1379,6 +1379,10 @@ form .FieldRow_Input {
   background-color: #f8981c;
 }
 /* line 19, scss/module/_footer.scss */
+.MainFooter small {
+  float: left;
+}
+/* line 23, scss/module/_footer.scss */
 .MainFooter svg {
   float: right;
 }

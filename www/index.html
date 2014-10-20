@@ -27,21 +27,21 @@
                     <h2 class="Alpha">Your time is very valuable!</h2>
                     <h3 class="Beta">What will you do if you have more free time?</h3>
 
-                    <div>
+                    <div class="MainContent_Banner_Left">
                         <p>
                             At Jingga we believe that time is the most valuable possession that you can have. We want you to free you from doing meaningless tasks. When you shop at Jingga, these are the benefits that you can get:
                         </p>
 
-                        <ul>
+                        <ol>
                             <li>Save time</li>
                             <li>Save petrol</li>
                             <li>Save space</li>
-                        </ul>
-                    </div>
+                        </ol>
+                    </div> <!-- eo .MainContent_Banner_Left -->
 
-                    <div>
-
-                    </div>
+                    <div class="MainContent_Banner_Right">
+                        <a class="Btn Btn-Submit" href="#what">Start shopping</a>
+                    </div> <!-- eo .MainContent_Banner_Right -->
                 </div> <!-- eo .Container -->
             </div> <!-- eo .MainContent_Banner -->
 
@@ -109,9 +109,29 @@
                 </div> <!-- eo .Container -->
             </section> <!-- eo .MainContent_Section -->
 
-            <section class="MainContent_Section MainContent_Section-What">
+            <section id="what" class="MainContent_Section MainContent_Section-What">
                 <div class="Container">
                     <h4 class="Gamma">What are you waiting for, let us help you save time!</h4>
+                    <form class="FormSubscribe">
+                    <div class="FieldRow">
+                        <label class="FieldRow_Label" for="form-fullname">Your Fullname</label>
+                        <input class="FieldRow_Input" name="fullname" id="form-fullname" type="text" />
+                    </div> <!-- .FieldRow -->
+                    <div class="FieldRow">
+                        <label class="FieldRow_Label" for="form-emailaddress">Your Email address</label>
+                        <input class="FieldRow_Input" name="emailaddress" id="form-emailaddress" type="email" />
+                    </div> <!-- .FieldRow -->
+                    <div class="FieldRow">
+                        <label class="FieldRow_Label" for="form-city">City you live in currently</label>
+                        <select class="FieldRow_Input" name="city" id="form-city">
+                            <option value="1">Surabaya</option>
+                            <option value="-1">Other</option>
+                        </select>
+                    </div> <!-- .FieldRow -->
+                    <div class="FieldRow">
+                        <button class="Btn Btn-Submit" type="submit">Start shopping</button>
+                    </div> <!-- .FieldRow -->
+                    </form>
                 </div> <!-- eo .Container -->
             </section> <!-- eo .MainContent_Section -->
         </main> <!-- eo .MainContent -->

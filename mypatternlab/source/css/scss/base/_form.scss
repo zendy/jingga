@@ -3,20 +3,46 @@
 \*------------------------------------*/
 /**
  * form
+ * .FormSubscribe
  */
 
 
 form {
-  .field-row {
+  .FieldRow {
     margin-bottom: 5px;
   }
 
-  .field-row__label {
+  .FieldRow_Label {
     display: block;
   }
 
-  .field-row__input {
+  .FieldRow_Input {
     display: inline-block;
     border: none;
+  }
+}
+
+.FormSubscribe {
+  .FieldRow {
+    margin: 0 auto;
+    padding: 0 0 32px;
+    width: 40%;
+  }
+
+  .FieldRow_Label, .FieldRow_Input {
+    width: 100%;
+    font-family: $font-primary;
+  }
+
+  .FieldRow_Input {
+    height: 48px;
+    padding: 0 1em;
+    line-height: 48px;
+  }
+
+  .FieldRow_Label {
+    height: 32px;
+    @include font-size-in-em( 19px );
+    line-height: 32px;
   }
 }

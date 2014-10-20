@@ -2,14 +2,14 @@
     BUTTONS
 \*------------------------------------*/
 /**
- * .btn
- * .btn--disabled
- * .btn--small
- * .btn--large
+ * .Btn
+ * .Btn-Disabled
+ * .Btn-Small
+ * .Btn-Large
  */
 
 
-.btn {
+.Btn {
   display: inline-block;
   padding: $default-pad-half;
   background-color: #fff;
@@ -20,17 +20,32 @@
   text-align: center;
 }
 
-.btn--disabled {
+.Btn-Disabled {
   background-color: #f9f9f9;
   color: #ddd;
 }
 
-.btn--small {
+.Btn-Small {
   font-size: $font-size-slightly-smaller;
 }
 
-.btn--large {
+.Btn-Large {
   padding: $default-pad-half;
   font-size: $font-size-slightly-larger;
 }
 
+.Btn-Submit {
+  display: block;
+  margin: 8px auto 0;
+  background-color: #f38630;
+  border-radius: 10px;
+  color: #fff;
+  font-family: $font-primary;
+  transition: background-color 0.2s ease-in-out;
+  @include font-size-in-em( 32px );
+
+  &:hover {
+    color: #fff;
+    background-color: #fa6900;
+  }
+}

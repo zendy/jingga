@@ -1187,10 +1187,15 @@ form .field-row__input {
   }
 }
 /* line 97, scss/module/_main.scss */
+.MainContent_Section_Gallery_Block svg {
+  display: block;
+  margin: 0 auto;
+}
+/* line 102, scss/module/_main.scss */
 .MainContent_Section_Gallery_Block h6 {
   font-family: "Gotham Rounded Medium";
 }
-/* line 102, scss/module/_main.scss */
+/* line 107, scss/module/_main.scss */
 .MainContent_Section_Gallery_Block p {
   color: #fff;
 }

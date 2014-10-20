@@ -94,6 +94,11 @@
     @include gallery(4 of 12);
   }
 
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+
   h6 {
     font-family: $font-primary;
     // font-weight: normal;

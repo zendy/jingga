@@ -5,6 +5,9 @@
  * .MainContent
  * .MainContent_Banner
  * .MainContent_Section
+ * .MainContent_Section-How
+ * .MainContent_Section-Why
+ * .MainContent_Section-What
  * .MainContent_Section_Gallery_Block
  */
 
@@ -59,14 +62,13 @@
 }
 
 .MainContent_Section {
+  min-height: 320px;
+
   @include susy-breakpoint( $bp-small, $layout-small ) {
-    height: auto;
-    min-height: 320px;
     padding: 32px 0;
   }
 
   @include susy-breakpoint( $bp-large, $layout-large, $no-query: true ) {
-    height: 320px;
     padding: 64px 0;
   }
 }
@@ -88,15 +90,16 @@
     @include span( 100% );
   }
 
-  // @include susy-breakpoint( $bp-medium, $layout-medium ) {
-
-  // }
-
   @include susy-breakpoint( $bp-large, $layout-large ) {
     @include gallery(4 of 12);
   }
 
-  // @include susy-breakpoint( $bp-xl, $layout-xl, $no-query: true ) {
+  h6 {
+    font-family: $font-primary;
+    // font-weight: normal;
+  }
 
-  // }
+  p {
+    color: #fff;
+  }
 }

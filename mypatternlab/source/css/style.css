@@ -1067,9 +1067,12 @@ form .field-row__input {
  * .MainContent
  * .MainContent_Banner
  * .MainContent_Section
+ * .MainContent_Section-How
+ * .MainContent_Section-Why
+ * .MainContent_Section-What
  * .MainContent_Section_Gallery_Block
  */
-/* line 22, scss/module/_main.scss */
+/* line 25, scss/module/_main.scss */
 .MainContent_Banner {
   position: relative;
   background-image: url("../images/banner_2.jpg");
@@ -1079,7 +1082,7 @@ form .field-row__input {
   background-position: center top;
 }
 @media (min-width: 20em) {
-  /* line 22, scss/module/_main.scss */
+  /* line 25, scss/module/_main.scss */
   .MainContent_Banner {
     height: auto;
     min-height: 640px;
@@ -1088,14 +1091,14 @@ form .field-row__input {
   }
 }
 @media (min-width: 50em) {
-  /* line 22, scss/module/_main.scss */
+  /* line 25, scss/module/_main.scss */
   .MainContent_Banner {
     height: 640px;
     padding: 32px 0;
     background-position: center top;
   }
 }
-/* line 40, scss/module/_main.scss */
+/* line 43, scss/module/_main.scss */
 .MainContent_Banner::before {
   bottom: 0;
   left: 0;
@@ -1106,54 +1109,51 @@ form .field-row__input {
   background-color: rgba(255, 255, 255, 0.8);
   content: '';
 }
-/* line 51, scss/module/_main.scss */
+/* line 54, scss/module/_main.scss */
 .MainContent_Banner .Container {
   position: relative;
   z-index: 1;
 }
-/* line 56, scss/module/_main.scss */
+/* line 59, scss/module/_main.scss */
 .MainContent_Banner h3 {
   text-align: right;
 }
 
-/* line 61, scss/module/_main.scss */
+/* line 64, scss/module/_main.scss */
 .MainContent_Section {
-  height: 320px;
+  min-height: 320px;
   padding: 64px 0;
 }
 @media (min-width: 20em) {
-  /* line 61, scss/module/_main.scss */
+  /* line 64, scss/module/_main.scss */
   .MainContent_Section {
-    height: auto;
-    min-height: 320px;
     padding: 32px 0;
   }
 }
 @media (min-width: 50em) {
-  /* line 61, scss/module/_main.scss */
+  /* line 64, scss/module/_main.scss */
   .MainContent_Section {
-    height: 320px;
     padding: 64px 0;
   }
 }
 
-/* line 74, scss/module/_main.scss */
+/* line 76, scss/module/_main.scss */
 .MainContent_Section-How {
   background-color: #69d2e7;
 }
 
-/* line 78, scss/module/_main.scss */
+/* line 80, scss/module/_main.scss */
 .MainContent_Section-Why {
   background-color: #a7dbd8;
 }
 
-/* line 82, scss/module/_main.scss */
+/* line 84, scss/module/_main.scss */
 .MainContent_Section-What {
   background-color: #e0e4cc;
 }
 
 @media (min-width: 20em) {
-  /* line 86, scss/module/_main.scss */
+  /* line 88, scss/module/_main.scss */
   .MainContent_Section_Gallery_Block {
     width: 100%;
     float: left;
@@ -1161,7 +1161,7 @@ form .field-row__input {
   }
 }
 @media (min-width: 50em) {
-  /* line 86, scss/module/_main.scss */
+  /* line 88, scss/module/_main.scss */
   .MainContent_Section_Gallery_Block {
     width: 32.20339%;
     float: left;
@@ -1185,6 +1185,14 @@ form .field-row__input {
     margin-right: -100%;
     clear: none;
   }
+}
+/* line 97, scss/module/_main.scss */
+.MainContent_Section_Gallery_Block h6 {
+  font-family: "Gotham Rounded Medium";
+}
+/* line 102, scss/module/_main.scss */
+.MainContent_Section_Gallery_Block p {
+  color: #fff;
 }
 
 /*------------------------------------*\

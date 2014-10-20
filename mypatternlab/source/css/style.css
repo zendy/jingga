@@ -1030,7 +1030,24 @@ form .field-row__input {
  * .MainHeader
  * .MainHeader_Logo
  */
-/* line 14, scss/module/_header.scss */
+/* line 10, scss/module/_header.scss */
+.MainHeader {
+  padding: 32px 0;
+}
+@media (min-width: 20em) {
+  /* line 10, scss/module/_header.scss */
+  .MainHeader {
+    padding: 16px 0;
+  }
+}
+@media (min-width: 50em) {
+  /* line 10, scss/module/_header.scss */
+  .MainHeader {
+    padding: 32px 0;
+  }
+}
+
+/* line 20, scss/module/_header.scss */
 .MainHeader_Logo {
   height: 208px;
   margin: 0 auto;
@@ -1059,37 +1076,65 @@ form .field-row__input {
 
 /* line 16, scss/module/_main.scss */
 .MainContent_Banner {
-  height: 640px;
   padding: 32px 0;
+  height: 640px;
 }
-/* line 20, scss/module/_main.scss */
+@media (min-width: 20em) {
+  /* line 16, scss/module/_main.scss */
+  .MainContent_Banner {
+    height: auto;
+    min-height: 640px;
+  }
+}
+@media (min-width: 50em) {
+  /* line 16, scss/module/_main.scss */
+  .MainContent_Banner {
+    height: 640px;
+  }
+}
+/* line 28, scss/module/_main.scss */
 .MainContent_Banner h3 {
   text-align: right;
 }
 
-/* line 25, scss/module/_main.scss */
+/* line 33, scss/module/_main.scss */
 .MainContent_Section {
   height: 320px;
   padding: 64px 0;
 }
+@media (min-width: 20em) {
+  /* line 33, scss/module/_main.scss */
+  .MainContent_Section {
+    height: auto;
+    min-height: 320px;
+    padding: 32px 0;
+  }
+}
+@media (min-width: 50em) {
+  /* line 33, scss/module/_main.scss */
+  .MainContent_Section {
+    height: 320px;
+    padding: 64px 0;
+  }
+}
 
-/* line 30, scss/module/_main.scss */
+/* line 46, scss/module/_main.scss */
 .MainContent_Section-How {
   background-color: #69d2e7;
 }
 
-/* line 34, scss/module/_main.scss */
+/* line 50, scss/module/_main.scss */
 .MainContent_Section-Why {
   background-color: #a7dbd8;
 }
 
-/* line 38, scss/module/_main.scss */
+/* line 54, scss/module/_main.scss */
 .MainContent_Section-What {
   background-color: #e0e4cc;
 }
 
 @media (min-width: 20em) {
-  /* line 42, scss/module/_main.scss */
+  /* line 58, scss/module/_main.scss */
   .MainContent_Section_Gallery_Block {
     width: 100%;
     float: left;
@@ -1097,7 +1142,7 @@ form .field-row__input {
   }
 }
 @media (min-width: 50em) {
-  /* line 42, scss/module/_main.scss */
+  /* line 58, scss/module/_main.scss */
   .MainContent_Section_Gallery_Block {
     width: 32.20339%;
     float: left;

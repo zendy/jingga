@@ -8,7 +8,13 @@
 
 
 .MainHeader {
+  @include susy-breakpoint( $bp-small, $layout-small ) {
+    padding: 16px 0;
+  }
 
+  @include susy-breakpoint( $bp-large, $layout-large, $no-query: true ) {
+    padding: 32px 0;
+  }
 }
 
 .MainHeader_Logo {

@@ -14,8 +14,16 @@
 }
 
 .MainContent_Banner {
-  height: 640px;
   padding: 32px 0;
+
+  @include susy-breakpoint( $bp-small, $layout-small ) {
+    height: auto;
+    min-height: 640px;
+  }
+
+  @include susy-breakpoint( $bp-large, $layout-large, $no-query: true ) {
+    height: 640px;
+  }
 
   h3 {
     text-align: right;
@@ -23,8 +31,16 @@
 }
 
 .MainContent_Section {
-  height: 320px;
-  padding: 64px 0;
+  @include susy-breakpoint( $bp-small, $layout-small ) {
+    height: auto;
+    min-height: 320px;
+    padding: 32px 0;
+  }
+
+  @include susy-breakpoint( $bp-large, $layout-large, $no-query: true ) {
+    height: 320px;
+    padding: 64px 0;
+  }
 }
 
 .MainContent_Section-How {

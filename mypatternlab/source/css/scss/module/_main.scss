@@ -25,19 +25,17 @@
 }
 
 .MainContent_Banner {
+  min-height: 480px;
   position: relative;
   background-image: url( '../images/banner_2.jpg' );
   background-size: cover;
 
   @include susy-breakpoint( $bp-small, $layout-small ) {
-    height: auto;
-    min-height: 480px;
-    padding: 0;
+    padding: 16px 0;
     background-position: 80% center;
   }
 
   @include susy-breakpoint( $bp-large, $layout-large, $no-query: true ) {
-    height: 480px;
     padding: 32px 0;
     background-position: center top;
   }

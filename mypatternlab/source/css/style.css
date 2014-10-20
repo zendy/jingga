@@ -1189,7 +1189,7 @@ form .field-row__input {
 /* line 97, scss/module/_main.scss */
 .MainContent_Section_Gallery_Block svg {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 14px;
 }
 /* line 102, scss/module/_main.scss */
 .MainContent_Section_Gallery_Block h6 {

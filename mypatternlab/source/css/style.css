@@ -1385,14 +1385,16 @@ form .FieldRow_Input {
 }
 /* line 24, scss/module/_footer.scss */
 .MainFooter small, .MainFooter svg {
+  display: inline-block;
   position: absolute;
 }
-/* line 28, scss/module/_footer.scss */
+/* line 29, scss/module/_footer.scss */
 .MainFooter small {
   bottom: 0;
   left: 10px;
 }
-/* line 33, scss/module/_footer.scss */
+/* line 34, scss/module/_footer.scss */
 .MainFooter svg {
+  float: right;
   right: 10px;
 }

@@ -1171,42 +1171,58 @@ form .FieldRow_Input {
 .MainContent_Banner h2 {
   color: #69645b;
   text-shadow: 2px 2px 2px #ccc;
+  font-size: 4.5em;
 }
-/* line 64, scss/module/_main.scss */
+@media (min-width: 20em) {
+  /* line 59, scss/module/_main.scss */
+  .MainContent_Banner h2 {
+    font-size: 2.25em;
+  }
+}
+@media (min-width: 50em) {
+  /* line 59, scss/module/_main.scss */
+  .MainContent_Banner h2 {
+    font-size: 4.5em;
+  }
+}
+/* line 72, scss/module/_main.scss */
 .MainContent_Banner h3 {
   color: #827e76;
   text-shadow: 3px 3px 3px #ccc;
   text-align: right;
+  font-size: 2.78119em;
 }
 @media (min-width: 20em) {
-  /* line 64, scss/module/_main.scss */
+  /* line 72, scss/module/_main.scss */
   .MainContent_Banner h3 {
     text-align: left;
+    font-size: 1.40619em;
   }
 }
 @media (min-width: 50em) {
-  /* line 64, scss/module/_main.scss */
+  /* line 72, scss/module/_main.scss */
   .MainContent_Banner h3 {
     text-align: right;
+    font-size: 2.78119em;
   }
 }
-/* line 77, scss/module/_main.scss */
+/* line 87, scss/module/_main.scss */
 .MainContent_Banner p, .MainContent_Banner li {
   font-size: 1.1875em;
 }
-/* line 81, scss/module/_main.scss */
+/* line 91, scss/module/_main.scss */
 .MainContent_Banner .Btn-Submit {
   box-shadow: 5px 5px 5px #ccc;
 }
 
-/* line 86, scss/module/_main.scss */
+/* line 96, scss/module/_main.scss */
 .MainContent_Banner_Left {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
 }
 @media (min-width: 20em) {
-  /* line 86, scss/module/_main.scss */
+  /* line 96, scss/module/_main.scss */
   .MainContent_Banner_Left {
     width: 100%;
     float: left;
@@ -1215,7 +1231,7 @@ form .FieldRow_Input {
   }
 }
 @media (min-width: 46.8em) {
-  /* line 86, scss/module/_main.scss */
+  /* line 96, scss/module/_main.scss */
   .MainContent_Banner_Left {
     width: 48.71795%;
     float: left;
@@ -1223,7 +1239,7 @@ form .FieldRow_Input {
   }
 }
 @media (min-width: 50em) {
-  /* line 86, scss/module/_main.scss */
+  /* line 96, scss/module/_main.scss */
   .MainContent_Banner_Left {
     width: 48.97959%;
     float: left;
@@ -1231,7 +1247,7 @@ form .FieldRow_Input {
   }
 }
 @media (min-width: 73em) {
-  /* line 86, scss/module/_main.scss */
+  /* line 96, scss/module/_main.scss */
   .MainContent_Banner_Left {
     width: 49.15254%;
     float: left;
@@ -1239,14 +1255,14 @@ form .FieldRow_Input {
   }
 }
 
-/* line 104, scss/module/_main.scss */
+/* line 114, scss/module/_main.scss */
 .MainContent_Banner_Right {
   width: 49.15254%;
   float: right;
   margin-right: 0;
 }
 @media (min-width: 20em) {
-  /* line 104, scss/module/_main.scss */
+  /* line 114, scss/module/_main.scss */
   .MainContent_Banner_Right {
     width: 100%;
     float: left;
@@ -1255,7 +1271,7 @@ form .FieldRow_Input {
   }
 }
 @media (min-width: 46.8em) {
-  /* line 104, scss/module/_main.scss */
+  /* line 114, scss/module/_main.scss */
   .MainContent_Banner_Right {
     width: 48.71795%;
     float: right;
@@ -1263,7 +1279,7 @@ form .FieldRow_Input {
   }
 }
 @media (min-width: 50em) {
-  /* line 104, scss/module/_main.scss */
+  /* line 114, scss/module/_main.scss */
   .MainContent_Banner_Right {
     width: 48.97959%;
     float: right;
@@ -1271,7 +1287,7 @@ form .FieldRow_Input {
   }
 }
 @media (min-width: 73em) {
-  /* line 104, scss/module/_main.scss */
+  /* line 114, scss/module/_main.scss */
   .MainContent_Banner_Right {
     width: 49.15254%;
     float: right;
@@ -1279,41 +1295,41 @@ form .FieldRow_Input {
   }
 }
 
-/* line 122, scss/module/_main.scss */
+/* line 132, scss/module/_main.scss */
 .MainContent_Section {
   min-height: 320px;
   padding: 64px 0;
 }
 @media (min-width: 20em) {
-  /* line 122, scss/module/_main.scss */
+  /* line 132, scss/module/_main.scss */
   .MainContent_Section {
     padding: 32px 0;
   }
 }
 @media (min-width: 50em) {
-  /* line 122, scss/module/_main.scss */
+  /* line 132, scss/module/_main.scss */
   .MainContent_Section {
     padding: 64px 0;
   }
 }
 
-/* line 134, scss/module/_main.scss */
+/* line 144, scss/module/_main.scss */
 .MainContent_Section-How {
   background-color: #69d2e7;
 }
 
-/* line 138, scss/module/_main.scss */
+/* line 148, scss/module/_main.scss */
 .MainContent_Section-Why {
   background-color: #a7dbd8;
 }
 
-/* line 142, scss/module/_main.scss */
+/* line 152, scss/module/_main.scss */
 .MainContent_Section-What {
   background-color: #e0e4cc;
 }
 
 @media (min-width: 20em) {
-  /* line 146, scss/module/_main.scss */
+  /* line 156, scss/module/_main.scss */
   .MainContent_Section_Gallery_Block {
     width: 100%;
     float: left;
@@ -1321,7 +1337,7 @@ form .FieldRow_Input {
   }
 }
 @media (min-width: 50em) {
-  /* line 146, scss/module/_main.scss */
+  /* line 156, scss/module/_main.scss */
   .MainContent_Section_Gallery_Block {
     width: 32.20339%;
     float: left;
@@ -1346,16 +1362,16 @@ form .FieldRow_Input {
     clear: none;
   }
 }
-/* line 155, scss/module/_main.scss */
+/* line 165, scss/module/_main.scss */
 .MainContent_Section_Gallery_Block svg {
   display: block;
   margin: 0 auto 14px;
 }
-/* line 160, scss/module/_main.scss */
+/* line 170, scss/module/_main.scss */
 .MainContent_Section_Gallery_Block h6 {
   font-family: "Gotham Rounded Medium";
 }
-/* line 165, scss/module/_main.scss */
+/* line 175, scss/module/_main.scss */
 .MainContent_Section_Gallery_Block p {
   color: #fff;
 }
